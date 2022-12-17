@@ -1,3 +1,76 @@
-div {
-    color: rebeccapurple;
+html {
+    background-color: #fcf6f2;
+}
+body {
+    width: 900px;
+    margin: auto;
+    background-color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+header {
+    width: 100%;
+    padding: 30px 50px;
+}
+header > div {
+    display: flex;
+}
+header img {
+    width: 230px;
+    border-radius: 50px 0;
+}
+.personal-info,
+.second-column {
+    margin: 0 40px;
+}
+main {
+    padding: 0px 50px;
+}
+main > div {
+    display: flex;
+}
+.firsst-column {
+    max-width: 230px;
+}
+.firsst-column div,
+.second-column div {
+    padding: 1px 20px;
+    margin-top: 15px;
+}
+.contscts,
+.experience,
+.languages {
+    background-color: #d0dae0;
+}
+.contscts {
+    border-radius: 20px 0 0;
+}
+.experience {
+    border-radius: 0 20px;
+}
+.code,
+.skils {
+    background-color: #efe7d6;
+    border-radius: 20px 0;
+}
+.education {
+    background-color: #dfc8b0;
+    border-radius: 0 20px 0 0;
+}
+.languages {
+    border-radius: 20px 0;
+}
+pre {
+    font-size: 0.9rem;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b6afad;
+    padding: 5px 50px;
+    margin-top: 30px;
+    font-size: 1.3rem;
+}
+footer img {
+    width: 70px;
 }
