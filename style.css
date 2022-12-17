@@ -1,14 +1,16 @@
 html {
     background-color: #fcf6f2;
+    height: 100%;
 }
 body {
     width: 900px;
-    margin: auto;
-    background-color: #fff;
+    margin: 0 auto;
+    height: 100%;
     font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 header {
-    width: 100%;
     padding: 30px 50px;
 }
 header > div {
@@ -24,17 +26,26 @@ header img {
 }
 main {
     padding: 0px 50px;
+    flex: 1 1 auto;
 }
 main > div {
     display: flex;
 }
+main ul {
+    list-style-type: none;
+    padding: 0;
+}
 .firsst-column {
     max-width: 230px;
 }
-.firsst-column div,
-.second-column div {
+.firsst-column > div,
+.second-column > div {
     padding: 1px 20px;
     margin-top: 15px;
+}
+.firsst-column > div p,
+.second-column > div p {
+    margin: 0 0 8px;
 }
 .contscts,
 .experience,
@@ -44,18 +55,49 @@ main > div {
 .contscts {
     border-radius: 20px 0 0;
 }
+li {
+    margin-bottom: 8px;
+}
+.contscts a,
+.languages a {
+    text-decoration: none;
+    color: black;
+}
+li div {
+    display: flex;
+
+    align-items: center;
+}
+li img {
+    width: 20px;
+    margin-right: 6px;
+}
 .experience {
     border-radius: 0 20px;
 }
+
 .code,
-.skils {
+.skills {
     background-color: #efe7d6;
     border-radius: 20px 0;
+}
+.skills {
+    padding-bottom: 15px !important;
+}
+.three-logos {
+    width: 200px;
+}
+.sass {
+    width: 150px;
+}
+.git {
+    width: 70px;
 }
 .education {
     background-color: #dfc8b0;
     border-radius: 0 20px 0 0;
 }
+
 .languages {
     border-radius: 20px 0;
 }
@@ -67,10 +109,10 @@ footer {
     justify-content: space-between;
     align-items: center;
     background-color: #b6afad;
-    padding: 5px 50px;
+    padding: 0 50px;
     margin-top: 30px;
     font-size: 1.3rem;
 }
 footer img {
-    width: 70px;
+    width: 40px;
 }
